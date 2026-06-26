@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, MapPin, Terminal, Briefcase, Award, Code, Database, Cpu } from 'lucide-react';
+import { Mail, Link, MapPin, Terminal, Briefcase, Award, Code, Database, Cpu } from 'lucide-react';
 import './index.css';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
             <Mail size={18} /> Email Me
           </a>
           <a href="https://linkedin.com/in/hassan-adil0" target="_blank" rel="noopener noreferrer" className="contact-link">
-            <Linkedin size={18} /> LinkedIn
+            <Link size={18} /> LinkedIn
           </a>
           <div className="contact-link" style={{ pointerEvents: 'none' }}>
             <MapPin size={18} /> Open to Remote Work

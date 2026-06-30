@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# graphify knowledge-graph output
+graphify-out/
+
+# local editor / preview tooling
+.claude/
+.impeccable/

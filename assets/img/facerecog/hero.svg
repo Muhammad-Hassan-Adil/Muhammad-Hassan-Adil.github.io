@@ -1,0 +1,21 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Facial recognition pipeline concept graphic">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#3b1e5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#g2)"/>
+  <text x="600" y="330" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#e2e8f0" text-anchor="middle">Facial Recognition System</text>
+  <text x="600" y="385" font-family="Inter, Arial, sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle">Python + OpenCV identity verification pipeline</text>
+  <g transform="translate(560,420)" stroke="#c084fc" stroke-width="3" fill="none">
+    <rect x="0" y="0" width="130" height="160" rx="16"/>
+    <circle cx="40" cy="50" r="6" fill="#c084fc"/>
+    <circle cx="90" cy="50" r="6" fill="#c084fc"/>
+    <path d="M35 100 Q65 125 95 100"/>
+    <rect x="-15" y="-15" width="30" height="30"/>
+    <rect x="115" y="-15" width="30" height="30"/>
+    <rect x="-15" y="145" width="30" height="30"/>
+    <rect x="115" y="145" width="30" height="30"/>
+  </g>
+</svg>

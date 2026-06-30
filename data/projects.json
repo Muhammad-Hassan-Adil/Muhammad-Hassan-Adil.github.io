@@ -1,0 +1,43 @@
+{
+  "projects": [
+    {
+      "id": "airigcheck",
+      "title": "AiRigCheck",
+      "tagline": "AI hardware analyzer, rig configurator and cloud cost comparator — shipped to production.",
+      "featured": true,
+      "categories": ["ai", "backend"],
+      "thumb": "assets/img/airigcheck/hero.png",
+      "href": "projects/airigcheck.html",
+      "imageAlt": "AiRigCheck landing page: Stop Guessing, Start Optimizing, with hardware analyzer, rig configurator and cloud pricing tools"
+    },
+    {
+      "id": "attendance-system",
+      "title": "Face Recognition Attendance Kiosk",
+      "tagline": "On-device face recognition kiosk with an admin dashboard for live attendance tracking.",
+      "featured": true,
+      "categories": ["computer-vision", "backend"],
+      "thumb": "assets/img/attendance/admin.png",
+      "href": "projects/attendance-system.html",
+      "imageAlt": "Attendance system admin dashboard login screen"
+    },
+    {
+      "id": "fallx",
+      "title": "FallX (Fall Protection Vest)",
+      "tagline": "Best Final Year Project Award — ML-powered wearable that detects falls and triggers mobile alerts.",
+      "featured": true,
+      "categories": ["ai"],
+      "thumb": "assets/img/fallx/hero.svg",
+      "href": "projects/fallx.html",
+      "imageAlt": "FallX fall-detection vest concept graphic"
+    },
+    {
+      "id": "face-recognition",
+      "title": "Facial Recognition System",
+      "tagline": "Academic project: a facial recognition pipeline for identity verification, built with OpenCV.",
+      "categories": ["computer-vision"],
+      "thumb": "assets/img/facerecog/hero.svg",
+      "href": "projects/face-recognition.html",
+      "imageAlt": "Facial recognition pipeline concept graphic"
+    }
+  ]
+}

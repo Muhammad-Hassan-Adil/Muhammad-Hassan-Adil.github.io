@@ -22,8 +22,8 @@
     },
     {
       "id": "fallx",
-      "title": "FallX (Fall Protection Vest)",
-      "tagline": "Best Final Year Project Award — ML-powered wearable that detects falls and triggers mobile alerts.",
+      "title": "FallX: Airbag Safety Vest",
+      "tagline": "Best FYP Award — detects falls with ML and physically deploys a CO₂ airbag to cushion impact.",
       "featured": true,
       "categories": ["ai"],
       "thumb": "assets/img/fallx/hero.svg",

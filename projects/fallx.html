@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.documentElement.classList.add('js');</script>
-  <title>FallX — Case study | Muhammad Hassan Adil</title>
+  <title>FallX: Airbag Safety Vest — Case study | Muhammad Hassan Adil</title>
   <meta name="description"
-    content="Case study: FallX, an ML-powered wearable fall-detection vest, winner of the Best Final Year Project Award.">
+    content="Case study: FallX, an airbag safety vest that detects falls with ML and physically deploys a CO2 airbag. Best Final Year Project Award, FCCU 2024.">
   <link rel="icon" href="../assets/img/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,60 +79,71 @@
     </nav>
 
     <header class="page-hero reveal">
-      <p class="eyebrow">Case study · AI / ML · Final Year Project · Best FYP Award</p>
-      <h1>FallX (Fall Protection Vest)</h1>
-      <p class="lede">An ML-powered wearable vest that detects falls using sensor fusion and triggers mobile alerts
-        in real time — built as my final-year project and awarded Best Final Year Project.</p>
+      <p class="eyebrow">Case study · AI / ML · Final Year Project · Best FYP Award · FCCU 2024</p>
+      <h1>FallX: Airbag Safety Vest</h1>
+      <p class="lede">A wearable vest that detects falls in real time using machine learning and sensor fusion,
+        then physically deploys a CO₂ airbag to cushion the impact — built for elderly adults and motorcyclists.
+        Awarded Best Final Year Project at FCCU, Fall 2024.</p>
     </header>
 
     <figure class="figure-block reveal">
       <img src="../assets/img/fallx/hero.svg" width="1200" height="750"
-        alt="FallX fall-detection vest concept graphic" loading="eager" decoding="async">
-      <figcaption>FallX combines wearable sensors, an embedded classifier and a companion mobile app.</figcaption>
+        alt="FallX airbag safety vest concept graphic" loading="eager" decoding="async">
+      <figcaption>FallX combines an ESP32-S3 microcontroller, a 9-axis IMU, a CO₂ airbag cartridge and a Flutter guardian app.</figcaption>
     </figure>
 
     <dl class="case-meta reveal">
       <div>
         <dt>Problem</dt>
-        <dd>Falls are a leading cause of injury for elderly and vulnerable individuals, and delayed response makes
-          outcomes worse. A wearable that detects a fall and alerts a caregiver immediately can close that gap.</dd>
+        <dd>37.3 million falls require medical attention globally each year. One in three adults aged 65+ falls
+          annually, and over 6,000 people die in motorcycle accidents in Pakistan alone. Existing solutions are
+          either unaffordable or offer detection without protection.</dd>
       </div>
       <div>
         <dt>My role</dt>
-        <dd>Team project — I worked on the ML classification pipeline: training and evaluating fall-detection
-          models and integrating them with the embedded sensor and mobile alert system.</dd>
+        <dd>Team of three (M. Hassan Adil, M. Shahrez Malik, Faizan I. Cheema), supervised by Dr. Sidra Minhas
+          (FCCU). I led the ML pipeline: data preprocessing on the UMAFall dataset, training and evaluating CNN,
+          SVM and Random Forest classifiers, and integrating the best model into the embedded system.</dd>
       </div>
       <div>
         <dt>Toolkit</dt>
-        <dd>Python, Scikit-learn, ESP32, MPU9250 (IMU sensor), Flutter.</dd>
+        <dd>Python, Scikit-learn (SVM, Random Forest), TensorFlow/Keras (CNN), ESP32-S3, MPU9250 9-axis IMU,
+          CO₂ solenoid valve, Flutter (mobile app), Firebase.</dd>
       </div>
     </dl>
 
     <article class="prose reveal">
       <h2>How it works</h2>
       <ul>
-        <li><strong>Sensor fusion.</strong> An ESP32 microcontroller paired with an MPU9250 inertial measurement
-          unit streams motion data from the vest in real time.</li>
-        <li><strong>Classification.</strong> Classification models trained on the UMAFall dataset with Scikit-learn
-          distinguish genuine falls from normal movement.</li>
-        <li><strong>Mobile alerts.</strong> A connected Flutter app receives a real-time alert the moment a fall is
-          detected, so a caregiver can respond immediately.</li>
+        <li><strong>Sensor fusion.</strong> An ESP32-S3 paired with an MPU9250 9-axis accelerometer/gyroscope/
+          magnetometer continuously streams motion data from the vest.</li>
+        <li><strong>ML classification.</strong> CNN, SVM and Random Forest models were trained on the UMAFall
+          dataset to distinguish genuine falls from normal movement. Models were benchmarked against each other;
+          the best-performing model runs on-device.</li>
+        <li><strong>Airbag deployment.</strong> On fall detection the system triggers a CO₂ solenoid valve,
+          inflating the vest airbag in milliseconds to cushion impact before the wearer hits the ground.</li>
+        <li><strong>Guardian app.</strong> A Flutter mobile app notifies registered guardians instantly, shares
+          the user's GPS location on a map, and manages emergency contacts — so help can be dispatched immediately.</li>
       </ul>
 
       <h2>Outcome</h2>
       <div class="outcome-row" aria-label="Outcome highlights">
         <div class="outcome">
           <strong>Best FYP Award</strong>
-          <span>Recognised as the Best Final Year Project, Fall 2024.</span>
+          <span>Recognised as the Best Final Year Project at FCCU, Fall 2024.</span>
         </div>
         <div class="outcome">
-          <strong>End-to-end build</strong>
-          <span>From IMU sensor data to a trained classifier to a live mobile alert.</span>
+          <strong>End-to-end system</strong>
+          <span>From raw IMU data → trained classifier → airbag trigger → guardian alert, fully integrated.</span>
+        </div>
+        <div class="outcome">
+          <strong>3 ML models compared</strong>
+          <span>CNN, SVM and Random Forest evaluated; confusion matrices and metrics documented in the full report.</span>
         </div>
       </div>
 
       <p>
-        <a class="btn btn--primary" href="../contact.html">Talk about building this</a>
+        <a class="btn btn--primary" href="../assets/docs/FallX-Project-Report.docx" download>Download project report</a>
         <a class="btn btn--ghost" href="../projects.html">← All projects</a>
       </p>
     </article>
